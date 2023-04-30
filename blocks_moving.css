@@ -1,0 +1,29 @@
+.player{
+    width: 60px;
+    height: 60px;
+    background-color: yellow;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.facePlayer{
+    width: 20px;
+    height: 20px;
+    background-color: gold;
+    display: flex;
+}
+.area{
+    height: 600px;
+    width: 600px;
+    background-color: green;
+    margin: 50px auto;
+}
+#A1{
+    background-image: url("images/Blue_ellipse.png");
+}
+#A2{
+    background-image: url("images/Grey_triangle.png");
+}
+#A3{
+    background-image: url("images/Green_orange_rectangle.png");
+}
