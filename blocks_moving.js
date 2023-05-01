@@ -26,5 +26,22 @@ window.onload = ()=>{
         }
     });
 
-    let images = [];
+    let images = ["images/Blue_ellipse.png", "images/Grey_triangle.png", "images/green_orange_rectangle_small.png"];
+
+    let n = 0;
+    let bool = true;
+
+    function count () {
+        document.querySelector(".player").style.backgroundImage = `url(${images[n]})`;
+        n === 2 ? n = 0 : n++;
+    }
+    
+    let time;
+
+    player.onmouseover = function(){
+        clearInterval(time);
+    }
+    player.onmouseout = function(){
+        time = setInterval(count, 3000);
+    }    
 }
